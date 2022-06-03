@@ -8,6 +8,6 @@ jobs:
     name: Label the PR
     steps:
       - name: Pull request size labeler
-        uses: ivanmedina/pr-size-labeler@v1.0.1
+        uses: ivanmedina/pr-size-labeler@v1.0.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
