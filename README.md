@@ -15,3 +15,5 @@ repeat
 asdfg
 copied
 ok
+
+errores
