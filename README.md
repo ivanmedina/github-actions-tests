@@ -17,3 +17,5 @@ copied
 ok
 
 errores
+
+no funciona aun...
