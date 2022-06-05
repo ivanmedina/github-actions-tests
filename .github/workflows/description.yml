@@ -1,0 +1,13 @@
+name: description
+
+on: [ pull_request ]
+
+jobs:
+  description: 
+    runs-on: ubuntu-latest
+    name: Chcke if pull request body description match pattern
+    steps:
+      - name: Pull request description checker
+        uses: ivanmedina/pr-description-checker@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
