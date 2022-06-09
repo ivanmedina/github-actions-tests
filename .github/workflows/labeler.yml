@@ -11,8 +11,8 @@ jobs:
         uses: ivanmedina/pr-size-labeler@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          xs-size-max: '10'
-          s-size-max: '50'
-          m-size-max: '100'
-          l-size-max: '500'
+          xs-size-max: '1'
+          s-size-max: '2'
+          m-size-max: '3'
+          l-size-max: '4'
           fail-if-xl: 'true'
