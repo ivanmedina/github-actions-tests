@@ -1,0 +1,17 @@
+name: description
+
+on: [ pull_request ]
+
+jobs:
+  description: 
+    runs-on: ubuntu-latest
+    name: Chcke if critical files have been modified
+    steps:
+      - name: Critical files checker
+        uses: ivanmedina/pr-critical-files@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          critical_message: Take a look, you've commited some <b>critical file</b>
+          critical_files: |
+            .env
+            action.yml
